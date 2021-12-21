@@ -1,0 +1,828 @@
+
+/* ...Itens gerais....*/
+
+ul {
+  padding-inline-start: 0px;
+}
+
+body {
+  background: #3D3D3D;
+  background-image: url(../img/banner-principal.png), url(../img/Rectangle.svg);
+  background-position: top, right top 27.5%;
+  background-size: auto, 467px 673px;
+  background-repeat: no-repeat, no-repeat;
+  font-family: 'Open Sans', sans-serif;
+}
+
+main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #FFFFFF;
+}
+
+.linha-horizontal-titulos {
+  border: .3rem solid #AAD4D0;
+  background: #AAD4D0;
+  border-radius: 1rem;
+  width: 2.5rem;
+  margin: 0;
+}
+
+.linha-vertical-video {
+  transform: rotate(90deg);
+  width: 3.625rem;
+  border: 2px solid #4B4B4B;
+  background: #4B4B4B;
+  margin-top: 3rem;
+}
+
+.botao-quero-comprar {
+  width: 17.375rem;
+  height: 3.875rem;
+  background: linear-gradient(90.19deg, #C5EFEB 0.16%, #98F6EE 98.78%);
+  border-radius: 50px;
+  border: none;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #3D3D3D;
+  cursor: pointer;
+
+  animation: mymove 1s ease-in infinite alternate;
+}
+
+@keyframes mymove {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.025);
+  }
+}
+
+
+.botao-quero-comprar:hover {
+  transition-duration: 300ms;
+  background: linear-gradient(90.19deg, #98F6EE 0.16%, #C5EFEB 98.78%);
+  transform: scale(1.05);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ...Sessao 1....*/
+
+.sessao-1 {
+  margin-top: 2rem;
+  margin-bottom: 17rem;
+}
+
+.sessao-1>h1 {
+  font-weight: 600;
+  font-size: 3.2rem;
+  color: #F5F5F5;
+  margin-bottom: 1rem;
+}
+
+.titulo-frigideira {
+  margin-top: 5rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #BCE0DB;
+  border: 2px solid #BCE0DB;
+  border-radius: 50px;
+  padding: .5rem 1rem;
+  width: fit-content;
+}
+
+.subtitulo-frigideira {
+  font-size: 1.75rem;
+  color: #CBEBE5;
+  margin-bottom: 2.5rem;
+  margin-top: 0;
+}
+
+
+.sessao-1 ul li {
+  display: inline-block;
+  list-style-type: none;
+  color: #F5F5F5;
+  padding-right: 2rem;
+}
+
+.sessao-1 .icon-check,
+.sessao-3 .icon-check,
+.sessao-7 .icon-check {
+  vertical-align: middle;
+  margin-right: .5rem;
+}
+
+/* ...Sessao 2....*/
+
+.sessao-compativel {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: .5rem;
+  margin-bottom: 5rem;
+}
+
+.itens-sessao-compativel {
+  width: 23%;
+  min-width: 180px;
+}
+
+.titulo-compativel {
+  font-size: 1.5rem;
+  color: #F5F5F5;
+}
+
+.descricao-compativel {
+  font-size: 1.125rem;
+  color: #F5F5F5;
+  line-height: 150%;
+}
+
+/* ...Slider....*/
+
+
+.container-slider {
+  display: flex;
+
+}
+
+.slider {
+  margin-top: 12rem;
+}
+
+.controles-slider {
+  margin-left: 80%;
+}
+
+
+.botao-prev,
+.botao-next {
+  background-color: #FFFFFF;
+  opacity: 60%;
+  border: none;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+}
+
+.botao-Pausar {
+  visibility: hidden;
+}
+
+.botao-prev {
+  margin-right: .5rem;
+}
+
+
+
+
+
+/* ...Sessao 3....*/
+
+.sessao-3 h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #F5F5F5;
+}
+
+.sessao-3 p, .sessao-1 p {
+  font-size: 1.125rem;
+  line-height: 118%;
+  color: #e1fcf8;
+}
+
+.sessao-3 {
+  margin-bottom: 5rem;
+}
+
+.sessao-3 .botao-quero-comprar {
+  margin-top: 2rem;
+}
+
+/* ...Sessao 4....*/
+
+.sessao-4 p {
+  font-size: 1.125rem;
+  color: #F5F5F5;
+  line-height: 118%;
+  margin-bottom: 1.5rem;
+}
+
+.cartao-de-video img {
+  width: 70%;
+}
+
+#thevideo {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+
+}
+
+.cartao-de-video {
+  position: relative;
+  text-align: center;
+  margin: 5rem 0;
+  cursor: pointer;
+}
+
+
+.cartao-de-video::before {
+  content: '';
+  position: absolute;
+  background-image: url(../img/icon-play.svg);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 40rem;
+  height: 40rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events: none;
+
+  animation: playvideo 1s ease-in infinite alternate;
+
+}
+
+@keyframes playvideo {
+
+  from {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  to {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+
+
+/* ...Sessao 5....*/
+
+.conteudo-depoimentos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.depoimento {
+  box-sizing: border-box;
+  width: calc(50% - .5rem);
+  padding: 1rem 2rem;
+  background: #434343;
+  border-radius: 20px;
+  height: fit-content;
+}
+
+.aspas {
+  font-size: 2.828rem;
+}
+
+.texto-depoimento {
+  margin-left: 2rem;
+  color: #FFFFFF;
+  font-size: 1.125rem;
+  line-height: 1.313rem;
+}
+
+.dados-cliente {
+  display: flex;
+  padding-top: 1rem;
+  align-items: center;
+}
+
+.foto-cliente {
+  margin-right: 1rem;
+}
+
+.nome-cliente {
+  color: #FFFFFF;
+  font-size: 1.125rem;
+}
+
+.cidade-cliente {
+  color: #CBEBE5;
+  font-size: 1.125rem;
+}
+
+/* ...Sessao 6....*/
+
+.sessao-6 p,
+.sessao-6 table {
+  font-size: 1.125rem;
+  color: #FFFFFF;
+}
+
+.sessao-6 table tr:nth-child(2n-1) {
+  background: #434343;
+}
+
+td:nth-child(2n-1) {
+  border-radius: .3rem 0 0 .3rem;
+  padding: 1rem;
+}
+
+td:nth-child(2n-2) {
+  border-radius: 0 .3rem .3rem 0;
+  padding: 1rem;
+}
+
+table {
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  border-spacing: 0px;
+}
+
+/* ...Sessao 7....*/
+
+.vantagens-pagamento h1 {
+  font-weight: 600;
+  color: #F5F5F5;
+}
+
+.vantagens-pagamento p {
+  color: #C5EFEB;
+}
+
+.vantagens-pagamento li {
+  list-style-type: none;
+  color: #F5F5F5;
+  line-height: 350%;
+}
+
+/* ...Checkout....*/
+
+.Checkout {
+  box-sizing: border-box;
+  width: 34rem;
+  height: fit-content;
+  padding: 3.5rem 3rem;
+  background: #434343;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.Checkout h1 {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 118%;
+  text-align: center;
+  color: #F5F5F5;
+  margin-top: 0;
+}
+
+.texto-checkout-pequeno {
+  font-size: 1.125rem;
+  color: #9B9B9B;
+  text-align: center;
+  line-height: 250%;
+}
+
+.preco-destaque {
+  font-size: 2.75rem;
+  font-weight: bold;
+  color: #E5E5E5;
+}
+
+.Checkout .botao-quero-comprar {
+  margin: 0 0 2rem 0;
+}
+
+.sessao-7 {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+
+/* contato*/
+
+.contato {
+
+  margin: 0 55% auto;
+  box-sizing: border-box;
+  width: 34rem;
+  background: #434343;
+  border-radius: 20px;
+  padding: .5rem 1rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.contato h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.contato h2+p {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #C5EFEB;
+  margin-top: .5rem;
+}
+
+.whatsapp {
+  color: #00A859;
+  vertical-align: middle;
+  margin-right: .5rem;
+}
+
+.contato:nth-child(2n),
+a {
+  color: #00A859;
+}
+
+.divisao-contato {
+  border: .3rem solid #AAD4D0;
+  background: #AAD4D0;
+  border-radius: 1rem;
+  width: 1rem;
+  margin: 1rem 55% auto
+}
+
+/*Footer*/
+
+.ir-topo {
+  position: absolute;
+  left: 87%;
+  bottom: 70%;
+}
+
+footer {
+  position: relative;
+  background: #4B4B4B;
+  text-align: center;
+  font-size: .9rem;
+  line-height: 118%;
+  color: #E1FCF8;
+  margin-top: 5rem;
+}
+
+footer p {
+  padding: 2rem 0;
+  margin-bottom: 0;
+}
+
+/*Responsivo*/
+
+
+
+
+@media (max-width: 599px) {
+  body {
+    background-image: url(../img/banner-principal-mobile.png);
+    background-size: contain;
+  }
+
+  main {
+    width: 90%;
+  }
+
+  .logo-hexapan {
+    width: 150px;
+  }
+
+  .sessao-1 {
+    text-align: center;
+    margin-bottom: 16rem;
+  }
+
+  .titulo-frigideira {
+    margin: 2rem auto 0 auto;
+  }
+
+  .sessao-1>h1 {
+    font-size: 2rem;
+  }
+
+  .subtitulo-frigideira {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .sessao-1 ul li {
+    padding-top: .7rem;
+    padding-right: .5rem;
+  }
+
+  .sessao-compativel {
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .itens-sessao-compativel {
+    width: 100%;
+    text-align: center;
+  }
+
+  .linha-horizontal-titulos+h2 {
+    text-align: center;
+  }
+
+  .sessao-3 {
+    margin-bottom: 0;
+  }
+
+  .slider {
+    margin-top: 5rem;
+  }
+
+  .container-slider {
+    flex-direction: column;
+  }
+
+  .controles-slider {
+    margin-left: 70%;
+  }
+
+  .sessao-4 {
+    text-align: center;
+  }
+
+  embed {
+    width: 100%;
+    height: 400px;
+  }
+
+  .cartao-de-video img {
+    width: 100%;
+  }
+
+  .cartao-de-video::before {
+    content: '';
+    position: absolute;
+    background-image: url(../img/icon-play.svg);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 4rem;
+    height: 4rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events: none;
+  }
+
+  .conteudo-depoimentos {
+    flex-direction: column;
+  }
+
+  .depoimento {
+    width: 100%;
+  }
+
+  .sessao-6>p {
+    text-align: center;
+  }
+
+  .sessao-7 {
+    flex-direction: column;
+  }
+
+  .Checkout {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .formas-pagamento {
+    width: 100%;
+  }
+
+  .contato {
+    width: 100%;
+    margin: 0;
+  }
+
+  footer p {
+    padding: 2rem 1rem;
+  }
+
+  .linha-horizontal-titulos {
+    margin: 0 auto;
+  }
+
+  .botao-quero-comprar {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .divisao-contato {
+    margin: 1rem auto;
+  }
+
+  .ir-topo {
+    position: fixed;
+    left: 80%;
+    bottom: 5%;
+  }
+
+}
+
+@media (max-width: 350px) {
+  .sessao-1 {
+    margin-bottom: 14rem;
+  }
+
+  h1,
+  h2 {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 599px) {
+  .sessao-1 {
+    margin-bottom: 23rem;
+  }
+  
+}
+
+
+@media (min-width: 600px) and (max-width: 1050px) {
+  body {
+    background-image: url(../img/banner-principal-mobile.png);
+    background-size: contain;
+  }
+
+  embed {
+    width: 100%;
+    height: 500px;
+  }
+
+  main {
+    width: 90%;
+  }
+
+  .logo-hexapan {
+    width: 150px;
+  }
+
+  .sessao-1 {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  .titulo-frigideira {
+    margin: 2rem auto 0 auto;
+  }
+
+  .sessao-1>h1 {
+    font-size: 2rem;
+  }
+
+  .subtitulo-frigideira {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .sessao-1 ul li {
+    padding-top: .7rem;
+
+  }
+
+  .sessao-compativel {
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .itens-sessao-compativel {
+    width: 23%;
+    min-width: 100px;
+    text-align: center;
+  }
+
+  .linha-horizontal-titulos+h2 {
+    text-align: center;
+  }
+
+  .sessao-3 {
+    margin-top: 30rem;
+  }
+
+
+  .slider {
+    margin-top: 5rem;
+  }
+
+  .w3-content {
+    max-width: 100% !important;
+  }
+
+  .container-slider {
+    flex-direction: column;
+  }
+
+  .controles-slider {
+    margin-left: 85%;
+  }
+
+  .vantagens-pagamento {
+    text-align: center;
+  }
+
+  .sessao-4 {
+    text-align: center;
+    margin-top: 5rem;
+  }
+
+  .cartao-de-video img {
+    width: 100%;
+  }
+
+  .cartao-de-video::before {
+    content: '';
+    position: absolute;
+    background-image: url(../img/icon-play.svg);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 4rem;
+    height: 4rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events: none;
+  }
+
+  .conteudo-depoimentos {
+    flex-direction: column;
+  }
+
+  .depoimento {
+    width: 100%;
+  }
+
+  .sessao-6>p {
+    text-align: center;
+  }
+
+  .sessao-7 {
+    flex-direction: column;
+  }
+
+  .Checkout {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .formas-pagamento {
+    width: 100%;
+  }
+
+  .contato {
+    width: 100%;
+    margin: 0;
+  }
+
+  footer p {
+    padding: 2rem 1rem;
+  }
+
+  .linha-horizontal-titulos {
+    margin: 0 auto;
+  }
+
+  .botao-quero-comprar {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .divisao-contato {
+    margin: 1rem auto;
+  }
+
+  .ir-topo {
+    position: fixed;
+    left: 89%;
+    bottom: 5%;
+  }
+
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .sessao-3 {
+    margin-top: 55rem;
+  }
+
+  .itens-sessao-compativel {
+    width: 45%;
+  }
+}
